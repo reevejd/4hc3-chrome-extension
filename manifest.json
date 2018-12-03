@@ -11,10 +11,16 @@
   "content_scripts": [
     {
       "matches": [
-        "*://www.123formbuilder.com/*",
+        "*://www.123formbuilder.com/*"
+      ],
+      "js": ["timer-123formbuilder.js"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": [
         "*://www.surveymonkey.com/*"
       ],
-      "js": ["timer-123formbuilder-surveymonkey.js"],
+      "js": ["timer-surveymonkey.js"],
       "run_at": "document_end"
     },
     {
